@@ -1,18 +1,18 @@
 var gulp = require('gulp');
 var gutil = require('gulp-util');
 var concat = require('gulp-concat');
+var minifyHtml = require("gulp-minify-html");
+var minifyCss = require("gulp-minify-css");
+var sass = require("gulp-sass");
 
 gulp.task('default', function(){
   // Default task code
 });
 
 
-
-
- 
-gulp.task('scripts', function() {
-  return gulp.src(['/components/bootstrap/css/bootstrap.css'],
-            {base: 'bower_components/'})
-    //.pipe(concat('all.css'))
+// task
+gulp.task('compile-sass', function () {
+    gulp.src('./sass/one.scss') // path to your file
+    .pipe(sass())
     .pipe(gulp.dest('./css/'));
 });
