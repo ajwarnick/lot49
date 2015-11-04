@@ -12,7 +12,7 @@ gulp.task('default', function(){
 
 // task
 gulp.task('compile-sass', function () {
-    gulp.src('./sass/one.scss') // path to your file
-    .pipe(sass())
-    .pipe(gulp.dest('./css/'));
+    gulp.src('sass/one.scss')
+        .pipe(sass())
+        .pipe(gulp.dest('./css/'));
 });
