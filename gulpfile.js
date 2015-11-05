@@ -16,3 +16,20 @@ gulp.task('compile-sass', function () {
         .pipe(sass())
         .pipe(gulp.dest('./css/'));
 });
+
+
+
+gulp.task('compile-bower-js', function () {
+    gulp.src('bower_components/bootstrap/dist/js/bootstrap.js')
+        .pipe(gulp.dest('./js/'));
+    gulp.src('bower_components/jquery/dist/jquery.js')
+        .pipe(gulp.dest('./js/'));
+});
+
+
+
+gulp.task('test', function () {
+    gulp.src('sass/core.scss')
+        .pipe(sass())
+        .pipe(gulp.dest('./css/'));
+});
