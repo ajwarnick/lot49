@@ -6469,7 +6469,45 @@ button.close {
     display: none !important; } }
 
 /*# sourceMappingURL=bootstrap.css.map */
+.jumbotron {
+  padding: 0px; }
+
 .lot_small_logo img {
   display: block;
   margin-left: auto;
   margin-right: auto; }
+
+.navbar-inverse {
+  background-color: #F5F5F5;
+  border-color: #F5F5F5; }
+
+.lot_logo {
+  display: block;
+  width: 50px;
+  margin: 0 auto;
+  text-align: center; }
+
+.big_logo {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%; }
+  .big_logo svg {
+    fill: blue;
+    stroke: blue; }
+
+@keyframe logoshrink {
+  from {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%; }
+  to {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    height: 100%;
+    margin-left: -100px; } }
