@@ -24,6 +24,8 @@ gulp.task('compile-bower-js', function () {
         .pipe(gulp.dest('./js/'));
     gulp.src('bower_components/jquery/dist/jquery.js')
         .pipe(gulp.dest('./js/'));
+    gulp.src('bower_components/glfx-bower/glfx.js')
+        .pipe(gulp.dest('./js/'));
 });
 
 

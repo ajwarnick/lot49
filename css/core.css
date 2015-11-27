@@ -6494,8 +6494,8 @@ button.close {
   width: 100%;
   height: 100%; }
   .big_logo svg {
-    fill: blue;
-    stroke: blue; }
+    fill: #F00F02;
+    stroke: #F00F02; }
 
 @keyframe logoshrink {
   from {
@@ -6511,3 +6511,11 @@ button.close {
     width: 200px;
     height: 100%;
     margin-left: -100px; } }
+
+.filtered {
+  display: inline-block;
+  background: #F00F02;
+  position: relative; }
+  .filtered img {
+    filter: grayscale(100%);
+    opacity: 0.5; }

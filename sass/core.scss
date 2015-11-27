@@ -1,6 +1,5 @@
 @import '../bower_components/bootstrap/dist/css/bootstrap';
 
-
 body {
   //padding-top: 50px;
   //padding-bottom: 20px;
@@ -47,8 +46,11 @@ body {
         //width: 70px;
         //padding-top: 10px;
         //margin: 10px 0px 0px 0px;
-        fill: blue;
-        stroke: blue;
+        //fill: blue;
+        //stroke: blue;
+        
+        fill:#F00F02;
+        stroke:#F00F02;
     }
 }
 
@@ -71,3 +73,14 @@ body {
     }
 }
 
+/*
+.filtered {
+   display: inline-block;
+   background: #F00F02;
+   position: relative;
+   img {
+    filter: grayscale(100%);
+    opacity: 0.5;
+  }
+}
+*/
