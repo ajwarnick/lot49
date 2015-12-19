@@ -6471,10 +6471,19 @@ button.close {
 /*# sourceMappingURL=bootstrap.css.map */
 body {
   font-family: "Cousine";
-  color: #F00F02; }
+  color: #F00F02;
+  background: url("../img/hero_crop_red.gif");
+  background-size: 100%;
+  background-attachment: fixed;
+  height: 100%; }
 
-.jumbotron {
-  padding: 0px; }
+.container {
+  background: #fff;
+  width: 100%; }
+
+.bummper {
+  height: 800px;
+  display: block; }
 
 .lot_small_logo img {
   display: block;
@@ -6531,10 +6540,3 @@ body {
     width: 90%; }
   to {
     width: 20%; } }
-
-.filtered {
-  display: inline-block;
-  background: #F00F02;
-  position: relative; }
-  .filtered img {
-    opacity: 0.8; }
