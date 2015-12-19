@@ -22,7 +22,7 @@ window.onload = function() {
     // apply the ink filter
     //canvas.draw(texture).ink(0.25).update();
     
-    canvas.draw(texture).dotScreen(320, 239.5, 1.14, 3.45).update();
+    canvas.draw(texture).dotScreen(320, 239.5, 0.53, 3).update();
 
     // replace the image with the canvas
     image.parentNode.insertBefore(canvas, image);
