@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*!
  * Bootstrap v3.3.5 (http://getbootstrap.com)
  * Copyright 2011-2015 Twitter, Inc.
@@ -6470,16 +6471,148 @@ button.close {
 
 /*# sourceMappingURL=bootstrap.css.map */
 body {
-  font-family: "Cousine";
+  font-family: 'Open Sans', sans-serif;
   color: #F00F02;
   background: url("../img/hero_crop_red.gif");
   background-size: 100%;
   background-attachment: fixed;
   height: 100%; }
 
+::-moz-selection {
+  background-color: #F00F02;
+  color: #FfF0F0; }
+
+::selection {
+  background-color: #F00F02;
+  color: #FfF0F0; }
+
+a {
+  color: black;
+  position: relative;
+  outline: none;
+  text-decoration: none;
+  border-bottom: 3px solid #fe7b74;
+  box-shadow: inset 0 -7px 0 #fe7b74; }
+  a:hover {
+    background: #fe7b74;
+    color: black;
+    text-decoration: none; }
+  a.btn {
+    box-shadow: inset 0 0px 0 #fe7b74; }
+
+hr {
+  border-bottom: 1px solid red; }
+
+h1 {
+  border-bottom: 5px solid red;
+  margin-bottom: 20px;
+  padding-bottom: 5px;
+  font-weight: 600; }
+
+h2 {
+  border-bottom: 1px solid red;
+  padding-bottom: 6px; }
+
+h3 {
+  border-bottom: 0.5px solid red;
+  padding-bottom: 4px; }
+
+h4 {
+  box-sizing: border-box;
+  background: #F00F02;
+  color: #FfF0F0;
+  display: block;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 5px;
+  margin-bottom: 10px;
+  margin-top: 10px; }
+
+h5 {
+  box-sizing: border-box;
+  display: block;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  height: 19px;
+  line-height: 19px;
+  margin-bottom: 10px;
+  margin-top: 10px; }
+
+h6 {
+  box-sizing: border-box;
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  height: 15px;
+  line-height: 15px;
+  margin-bottom: 10px;
+  margin-top: 10px; }
+
+ul {
+  padding-left: 10px; }
+  ul li {
+    list-style-type: none;
+    list-style-position: inside;
+    text-indent: -1em;
+    padding-left: 1em; }
+  ul li:before {
+    content: '▧'; }
+
+tt, code {
+  font-family: Consolas, "Courier New", Courier, monospace;
+  font-size: 15px; }
+
+menu {
+  padding-left: 10px; }
+  menu li {
+    list-style-type: none;
+    list-style-position: inside;
+    text-indent: -1em;
+    padding-left: 1em; }
+  menu li:before {
+    content: '▣'; }
+
+blockquote {
+  font-weight: 600;
+  font-size: 12px;
+  border-left: 1px solid #F00F02;
+  margin: 10px 20px 15px 10px;
+  padding: 0px 10px 0px 10px; }
+  blockquote cite, blockquote footer {
+    border-top: 1px solid #F00F02;
+    font-size: 14px;
+    padding-top: 5px;
+    margin-top: 2px;
+    font-style: normal; }
+
+code {
+  background: #FFDDDD;
+  color: #bc0c02;
+  border-radius: 0px; }
+
+aside.pullquote {
+  font-weight: 600;
+  font-size: 20px;
+  border-bottom: 1px solid #f00F02;
+  border-top: 1px solid #f00F02;
+  margin: 10px 20px 10px 10px;
+  padding: 10px 5px 0px 10px;
+  letter-spacing: 1px; }
+
+.button-primary {
+  display: inline-block;
+  border: 2px solid red;
+  padding: 7px; }
+  .button-primary:hover {
+    background: red;
+    color: white; }
+
 .container {
-  background: #fff;
-  width: 100%; }
+  background: #FfF0F0;
+  width: 100%;
+  padding-bottom: 100px; }
 
 .bummper {
   height: 800px;
@@ -6500,9 +6633,12 @@ body {
 .lot_logo {
   display: block;
   width: auto;
-  padding-top: 10px;
+  padding-top: 5px;
   margin: 0 auto;
-  text-align: center; }
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 2px; }
 
 .sc_mine {
   -webkit-column-count: 2;
@@ -6540,3 +6676,56 @@ body {
     width: 90%; }
   to {
     width: 20%; } }
+
+.mynavbar {
+  background: #FfF0F0;
+  height: 40px;
+  border-bottom: 1px solid #F00F02;
+  font-weight: 600; }
+
+.width-text {
+  background: #498;
+  width: 100%; }
+  .width-text:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    border-top: solid 1px red;
+    z-index: -1; }
+
+.lined {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 5px; }
+  .lined:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    border-top: solid 3px red;
+    z-index: -1; }
+
+.textL {
+  margin: 0;
+  padding: 0 10px;
+  background: #FfF0F0;
+  display: inline-block; }
+
+.textR {
+  margin: 0;
+  padding: 0 10px;
+  background: #FfF0F0;
+  display: inline-block;
+  float: right; }
+
+.textC {
+  margin: 0;
+  padding: 0 10px;
+  background: #FfF0F0;
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  top: -9px; }

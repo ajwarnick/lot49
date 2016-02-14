@@ -1,21 +1,13 @@
 @import '../bower_components/bootstrap/dist/css/bootstrap';
+@import 'reg_tags';
 
-body {
-  //padding-top: 50px;
-  //padding-bottom: 20px;
-  font-family: 'Cousine', ;
-  //font-weight: 700;
-  color: #F00F02; 
-    
-    background: url("../img/hero_crop_red.gif");
-    background-size: 100%;
-    background-attachment:fixed;
-    height: 100%;
-}
+//font-family: 'Open Sans', sans-serif;
+
 
 .container{
-    background: #fff;
+    background: #FfF0F0;
     width: 100%;
+    padding-bottom: 100px;
 }
 .bummper{
     height: 800px;
@@ -44,9 +36,12 @@ body {
 .lot_logo{
     display: block;
     width: auto;
-    padding-top: 10px;
+    padding-top: 5px;
     margin: 0 auto;
     text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 2px;
     //position: fixed;
     
 }
@@ -105,3 +100,69 @@ body {
         width: 20%;
     }
 }
+
+.mynavbar{
+    background: $content-background;
+    height: 40px;
+    border-bottom: 1px solid $base-color;
+    font-weight: 600;
+}
+
+
+.width-text{
+    background: #498;
+    width: 100%;
+    
+    
+    &:after{
+    content:"";
+    position:absolute;
+    top:50%;
+    left:0;
+    right:0;
+    border-top:solid 1px red;
+    z-index:-1;
+    }
+    
+}
+
+
+
+
+.lined{
+
+    //text-align:center;
+    position:relative;
+    z-index:1;
+    margin-bottom: 5px;
+    &:after{
+        content:"";
+        position:absolute;
+        top:50%;
+        left:0;
+        right:0;
+        border-top:solid 3px red;
+        z-index:-1;
+    }
+}
+.textL{
+    margin:0;padding:0 10px;
+    background:$content-background;
+    display:inline-block;
+}
+.textR{
+    margin:0;padding:0 10px;
+    background:$content-background;
+    display:inline-block;
+        float: right;
+}
+.textC{
+    margin:0;padding:0 10px;
+    background:$content-background;
+    display:inline-block;
+    position: absolute;
+    left:50%;
+    top:-9px;
+}
+
+

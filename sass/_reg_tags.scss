@@ -1,0 +1,191 @@
+$base-color: #F00F02;
+$content-background: #FfF0F0;
+
+
+
+body {
+  //padding-top: 50px;
+  //padding-bottom: 20px;
+  font-family: 'Open Sans', sans-serif;
+  //font-weight: 700;
+  color: $base-color; 
+    
+    background: url("../img/hero_crop_red.gif");
+    background-size: 100%;
+    background-attachment:fixed;
+    height: 100%;
+    
+    
+    
+}
+
+
+::-moz-selection { 
+background-color: $base-color; 
+color: $content-background;
+}
+
+::selection {
+background-color: $base-color; 
+color: $content-background;
+}
+
+
+a{
+    color:black;
+    position: relative;
+    outline:none;
+    text-decoration: none;
+    border-bottom: 3px solid lighten($base-color,25%);
+    box-shadow: inset 0 -7px 0 lighten($base-color,25%);
+    
+    &:hover{
+        background: lighten($base-color,25%);
+        color:black;
+        text-decoration: none;
+    }
+    
+    &.btn{
+        box-shadow: inset 0 0px 0 lighten($base-color,25%);
+    }
+}
+
+hr{
+    border-bottom: 1px solid rgba(255, 0, 0, 1);
+}
+
+
+h1{
+    border-bottom:  5px solid rgba(255, 0, 0, 1);
+    margin-bottom:  20px;
+    padding-bottom: 5px;
+    font-weight: 600; 
+}
+
+
+h2{
+    border-bottom:  1px solid rgba(255, 0, 0, 1);
+    padding-bottom: 6px;
+}
+
+
+h3{
+    border-bottom:  .5px solid rgba(255, 0, 0, 1);
+    padding-bottom: 4px;
+}
+
+
+h4{
+    box-sizing: border-box;
+    background: $base-color;
+    color: $content-background;
+    display: block;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 5px;
+    
+    margin-bottom: 10px;
+    margin-top: 10px; 
+}
+
+h5{
+    box-sizing: border-box;
+    display: block;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    height: 19px;
+    line-height: 19px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+h6{
+    box-sizing: border-box;
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    height: 15px;
+    line-height: 15px;
+    margin-bottom: 10px;
+    margin-top: 10px;  
+}
+
+ul{
+    padding-left: 10px;
+    
+    li {
+        list-style-type: none;
+        list-style-position: inside;
+        text-indent: -1em;
+        padding-left: 1em;
+    }
+    li:before {
+        content: '▧';
+    }
+}
+
+tt,code{
+    font-family: Consolas, "Courier New", Courier, monospace;
+    font-size:15px;
+}
+
+menu{
+    padding-left: 10px;
+    
+    li {
+        list-style-type: none;
+        list-style-position: inside;
+        text-indent: -1em;
+        padding-left: 1em;
+    }
+    li:before {
+        content: '▣';
+        //font-size: 20px;
+    }
+}
+
+blockquote{
+    font-weight: 600;
+    font-size: 12px;
+    border-left: 1px solid #F00F02;
+    margin: 10px 20px 15px 10px;
+    padding: 0px 10px 0px 10px;
+    
+    cite,footer {
+        border-top: 1px solid #F00F02;
+        font-size: 14px;
+        padding-top: 5px;
+        margin-top: 2px;
+        font-style:normal;
+    }
+}
+
+code{
+    background: #FFDDDD;
+    color:#bc0c02;
+    border-radius: 0px;
+}
+
+aside.pullquote{
+    font-weight: 600;
+    font-size: 20px;
+    border-bottom: 1px solid #f00F02;
+    border-top: 1px solid #f00F02;
+    margin: 10px 20px 10px 10px;
+    padding: 10px 5px 0px 10px;
+    letter-spacing: 1px;
+}
+.button-primary{
+    display: inline-block;
+    border: 2px solid red;
+    padding: 7px;
+    
+    &:hover{
+        background: red;
+        color: white;
+        
+    }
+}
+
